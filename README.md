@@ -4,9 +4,9 @@ Aplicación para aprenderse los verbos irregulares creada por Jorge Baeza Díaz
 
 # IMPORTANTE
 
-- Si os pone que puede ser malicioso(tener un virus) no le hagáis caso, esto procede de que se ha creado a manos de una tercero y el antivirus desconfía. Para evitar esto hay que crear una excepción para este archivo
-- Hay que escribir los verbos siempre de la misma forma, con la primera mayúscula y sin espacios al final. Hay una excepción que es el pasado del verbo "Be" que se escribe exactamente así: Was / Were.
-- No aumentar ni disminuir la ventana ya que actualmente solo puede tener ese tamaño
+- Si os pone que puede ser malicioso(tener un virus) no le hagáis caso, esto procede de que se ha creado a manos de una tercero y el antivirus desconfía. Para evitar esto hay que crear una excepción para este archivo:
+- Hay que escribir los verbos siempre de la misma forma, con la primera mayúscula y sin espacios al final. Hay una excepción que es el pasado del verbo "Be" que se escribe exactamente así: Was / Were.:
+- No aumentar ni disminuir la ventana ya que actualmente solo puede tener ese tamaño:
 
 # Funcionamiento
 
