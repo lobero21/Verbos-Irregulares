@@ -8,7 +8,7 @@ verb_table = [
     ["Be", "Was / Were", "Been", "Ser"],
     ["Bear", "Bore", "Borne", "Soportar"],
     ["Beat", "Beat", "Beaten", "Golpear"],
-    ["Become", "Became", "Become", "Llegar numero ser"],
+    ["Become", "Became", "Become", "Llegar a ser"],
     ["Begin", "Began", "Begun", "Comenzar"],
     ["Bend", "Bent", "Bent", "Doblar"],
     ["Bet", "Bet", "Betted", "Apostar"],
@@ -170,11 +170,10 @@ def bucle():
         numero_filas = numero_filas - 1
 
         if numero_filas == 0:
-            Guardado.place(x=100, y=70)
             Guardado.config(text="TERMINADO, reinicia la app")
 
     else:      
-
+        Guardado.place(x=100, y=70)
         Guardado.config(text=f"MAL. {random_verb[0]},{random_verb[1]},{random_verb[2]},{random_verb[3]}")
     
     numero = random.choice(range(0,numero_filas))
