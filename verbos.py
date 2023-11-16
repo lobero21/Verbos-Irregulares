@@ -159,6 +159,8 @@ def bucle():
     global numero
     global random_form
     global verb_table
+    global a
+    global b
 
     result = f"{Presente.get()},{Pasado.get()},{Participio.get()},{Traduccion.get()}"
 
@@ -168,6 +170,8 @@ def bucle():
         Guardado.place(x=180, y=70)
         Guardado.config(text="BIEN")
         numero_filas = numero_filas - 1
+        a = a + 1
+        b = b + 1
 
         if numero_filas == 0:
             Guardado.config(text="TERMINADO, reinicia la app")
@@ -175,11 +179,15 @@ def bucle():
     else:      
         Guardado.place(x=100, y=70)
         Guardado.config(text=f"MAL. {random_verb[0]},{random_verb[1]},{random_verb[2]},{random_verb[3]}")
+        a = a + 1
     
     numero = random.choice(range(0,numero_filas))
     random_verb = verb_table[numero]
     random_form = random.choice(random_verb[:4])
     verb.config(text=random_form)
+
+    total.config(text=f"Total: {a}")
+    bien.config(text=f"Bien: {b}")
 
     Presente.delete(0, 'end')
     Pasado.delete(0, 'end')
@@ -206,6 +214,15 @@ Guardado.place(x=100, y=70)
 global verb
 verb = Label(text="", fg="black", font=("Arial", 10))
 verb.place(x=175, y=90)
+
+global a
+global b
+a = 0
+b = 0
+total = Label(text=f"Total: {a}", fg="black", font=("Arial", 10))
+total.place(x=30, y=80)
+bien = Label(text=f"Bien: {b}", fg="black", font=("Arial", 10))
+bien.place(x=30, y=100)
 
 tx_presente = Label(text="Presente", fg="black", font=("Arial", 10))
 tx_presente.place(x=90, y=20)
